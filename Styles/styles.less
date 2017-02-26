@@ -1,0 +1,47 @@
+@import "color";
+@import "typography"; //import of stylesheet
+
+@basecolor: #4286f4;
+@font: "OpenSans, verdana, sans-serif";
+@highlightcolor: #FF00FF; //variable
+@bgColor: #c1c1c1;
+@test: #ABCDEF;
+
+html{   
+    background-color: @basecolor;
+    font-family: @font;
+    .highlight //mixin   
+}
+
+body{
+    background-color: @basecolor;
+}
+
+.h1{
+    color: white;
+}
+
+.highlight
+{
+    background-color:@bgColor;
+}
+
+.button {
+    background-color:green;
+    color: white;
+    font-size: 20px;
+}
+
+.mainsection
+{
+    background-color:@basecolor;
+    .p{ //nested queries
+        color:@test;
+    }
+    .a{
+        text-decoration: underline;
+        color:@alternativecolor;
+        background-color: @test
+    }
+}
+

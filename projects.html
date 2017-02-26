@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CentiSoft - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">CentiSoft</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Developers
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="developers.html">See all developers</a></li>
+                        <li><a href="createDeveloper.html">Create a new developer</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customers
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customers.html">See all customers</a></li>
+                        <li><a href="createCustomer.html">Create a new customer</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html">See all projects</a></li>
+                        <li><a href="createProject.html">Create a new project</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>All projects</h1>
+    <div>
+        <p>This will be a list of all my projects.</p>
+        <button id="loadProjectsBtn">Get All Projects</button>
+    </div>
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Due Date</th>
+            <th>customerId</th>
+        </thead>
+        <tbody id="tablebody"></tbody>
+    </table>
+    <footer>&copy; Copyright myawesome company 2017</footer>
+</body>
+<script src="Scripts/getProjects.js"></script>
+
+</html>
